@@ -6,7 +6,7 @@ body {
 }
 
 .landing_screen {
-  background-image: url("../img/doc.png");
+  background-image: url("../img/loan.png");
   background-size: cover;
   height: 100vh;
 }
@@ -31,8 +31,8 @@ body {
 .landing_container {
   width: fit-content;
   position: relative;
-  top: 22%;
-  left: 15%;
+  top: 13%;
+  left: 62%;
 }
 
 .png_container {
@@ -64,11 +64,11 @@ body {
   line-height: 78px;
   font-size: 20px;
   font-family: "Bebas Neue", sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #000 5%);
+  background: linear-gradient(45deg, transparent 5%, #006400 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #ff1212;
+  box-shadow: 6px 0px 0px #fefcd0;
   outline: transparent;
   position: relative;
   user-select: none;
@@ -86,6 +86,13 @@ body {
   text-align: right;
   font-size: 20px;
   font-weight: 400;
+}
+
+select {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  width: 250px;
+  height: 20px;
 }
 
 input {

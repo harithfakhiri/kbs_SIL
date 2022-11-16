@@ -24,249 +24,89 @@
               action="{{ url_for('index') }}"
               method="post"
             >
-              <label for="radius_mean">Radius Mean : </label><br />
-              <input
-                type="text"
-                id="radius_mean"
-                name="radius_mean"
-                required
-              /><br />
-
-              <label for="texture_mean">Texture Mean : </label><br />
-              <input
-                type="text"
-                id="texture_mean"
-                name="texture_mean"
-                required
-              /><br />
-
-              <label for="perimeter_mean">Perimeter Mean : </label><br />
-              <input
-                type="text"
-                id="perimeter_mean"
-                name="perimeter_mean"
-                required
-              /><br />
-
-              <label for="area_mean">Area Mean : </label><br />
-              <input
-                type="text"
-                id="area_mean"
-                name="area_mean"
-                required
-              /><br />
-
-              <label for="smoothness_mean">Smoothness Mean : </label><br />
-              <input
-                type="text"
-                id="smoothness_mean"
-                name="smoothness_mean"
-                required
-              /><br />
-
-              <label for="compactness_mean">Compactness Mean : </label><br />
-              <input
-                type="text"
-                id="compactness_mean"
-                name="compactness_mean"
-                required
-              /><br />
-
-              <label for="concavity_mean">Concavity Mean : </label><br />
-              <input
-                type="text"
-                id="concavity_mean"
-                name="concavity_mean"
-                required
-              /><br />
-
-              <label for="concave_points_mean">Concave Points Mean : </label
-              ><br />
-              <input
-                type="text"
-                id="concave_points_mean"
-                name="concave_points_mean"
-                required
-              /><br />
-
-              <label for="symmetry_mean">Symmetry Mean : </label><br />
-              <input
-                type="text"
-                id="symmetry_mean"
-                name="symmetry_mean"
-                required
-              /><br />
-
-              <label for="fractal_dimension_mean"
-                >Fractal Dimension Mean : </label
-              ><br />
-              <input
-                type="text"
-                id="fractal_dimension_mean"
-                name="fractal_dimension_mean"
-                required
-              /><br />
-
+              <label for="Gender">Gender :</label><br />
+              <select name="Gender" id="Gender" required>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+              </select>
               <br />
-              <label for="radius_se">Radius Se:</label><br />
-              <input
-                type="text"
-                id="radius_se"
-                name="radius_sen"
-                required
-              /><br />
 
-              <label for="texture_se">Texture Se:</label><br />
-              <input
-                type="text"
-                id="texture_se"
-                name="texture_se"
-                required
-              /><br />
-
-              <label for="perimeter_se">Perimeter Se:</label><br />
-              <input
-                type="text"
-                id="perimeter_se"
-                name="perimeter_se"
-                required
-              /><br />
-
-              <label for="area_se">Area Se:</label><br />
-              <input type="text" id="area_se" name="area_se" required /><br />
-
-              <label for="smoothness_se">Smoothness Se:</label><br />
-              <input
-                type="text"
-                id="smoothness_se"
-                name="smoothness_se"
-                required
-              /><br />
-
-              <label for="compactness_se">Compactness Se:</label><br />
-              <input
-                type="text"
-                id="compactness_se"
-                name="compactness_se"
-                required
-              /><br />
-
-              <label for="concavity_se">Concavity Se:</label><br />
-              <input
-                type="text"
-                id="concavity_se"
-                name="concavity_se"
-                required
-              /><br />
-
-              <label for="concave_points_se">Concave Points Se:</label><br />
-              <input
-                type="text"
-                id="concave_points_se"
-                name="concave_points_se"
-                required
-              /><br />
-
-              <label for="symmetry_se">Symmetry Se:</label><br />
-              <input
-                type="text"
-                id="symmetry_se"
-                name="symmetry_se"
-                required
-              /><br />
-
-              <label for="fractal_dimension_se">Fractal Dimension Se:</label
-              ><br />
-              <input
-                type="text"
-                id="fractal_dimension_se"
-                name="fractal_dimension_se"
-                required
-              /><br />
-
+              <label for="Married">Married :</label><br />
+              <select name="Married" id="Married" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+              </select>
               <br />
-              <label for="radius_worst">Radius Worst:</label><br />
+
+              <label for="Dependents">Dependents :</label><br />
+              <select name="Dependents" id="Dependents" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <br />
+
+              <label for="Education">Education :</label><br />
+              <select name="Education" id="Education" required>
+                <option value="1">Graduate</option>
+                <option value="0">Not Graduate</option>
+              </select>
+              <br />
+
+              <label for="Self_Employed">Self Employed :</label><br />
+              <select name="Self_Employed" id="Self_Employed" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+              </select>
+              <br />
+
+              <label for="ApplicantIncome	">Applicant Income : </label><br />
               <input
                 type="text"
-                id="radius_worst"
-                name="radius_worst"
+                id="ApplicantIncome	"
+                name="ApplicantIncome	"
                 required
               /><br />
 
-              <label for="texture_worst">Texture Worst:</label><br />
+              <label for="CoapplicantIncome">Coapplicant Income : </label><br />
               <input
                 type="text"
-                id="texture_worst"
-                name="texture_worst"
+                id="CoapplicantIncome"
+                name="CoapplicantIncome"
                 required
               /><br />
 
-              <label for="perimeter_worst">Perimeter Worst:</label><br />
+              <label for="LoanAmount">Loan Amount : </label><br />
               <input
                 type="text"
-                id="perimeter_worst"
-                name="perimeter_worst"
+                id="LoanAmount"
+                name="LoanAmount"
                 required
               /><br />
 
-              <label for="area_worst">Area Worst:</label><br />
+              <label for="Loan_Amount_Term">Loan Amount Term : </label><br />
               <input
                 type="text"
-                id="area_worst"
-                name="area_worst"
+                id="Loan_Amount_Term"
+                name="Loan_Amount_Term"
                 required
               /><br />
 
-              <label for="smoothness_worst">Smoothness Worst:</label><br />
-              <input
-                type="text"
-                id="smoothness_worst"
-                name="smoothness_worst"
-                required
-              /><br />
+              <label for="Credit_History">Credit History :</label><br />
+              <select name="Credit_History" id="Credit_History" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+              </select>
+              <br />
 
-              <label for="compactness_worst">Compactness Worst:</label><br />
-              <input
-                type="text"
-                id="compactness_worst"
-                name="compactness_worst"
-                required
-              /><br />
-
-              <label for="concavity_worst">Concavity Worst:</label><br />
-              <input
-                type="text"
-                id="concavity_worst"
-                name="concavity_worst"
-                required
-              /><br />
-
-              <label for="concave_points_worst">Concave Points Worst:</label
-              ><br />
-              <input
-                type="text"
-                id="concave_points_worst"
-                name="concave_points_worst"
-                required
-              /><br />
-
-              <label for="symmetry_worst">Symmetry Worst:</label><br />
-              <input
-                type="text"
-                id="symmetry_worst"
-                name="symmetry_worst"
-                required
-              /><br />
-
-              <label for="fractal_dimension_worst"
-                >Fractal Dimension Worst:</label
-              ><br />
-              <input
-                type="text"
-                id="fractal_dimension_worst"
-                name="fractal_dimension_worst"
-                required
-              /><br />
+              <label for="Property_Area">Property Area :</label><br />
+              <select name="Property_Area" id="Property_Area" required>
+                <option value="0">Rural</option>
+                <option value="1">Semiurban</option>
+                <option value="2">Urban</option>
+              </select>
+              <br />
 
               <br /><button class="predict_btn" type="submit" value="Submit">
                 Predict
@@ -275,7 +115,6 @@
           </div>
           <h2>{{prediction}}</h2>
           <h3>{{description}}</h3>
-          <h4>{{more_info}}</h4>
         </div>
         <div class="right">
           Harith Fakhiri Setiawan - 13519161 <br />
